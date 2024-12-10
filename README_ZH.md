@@ -23,7 +23,7 @@
 1. 克隆仓库:
 
 ```bash
-git clone https://github.com/yourusername/awesome-heurist.git
+git clone git@github.com:flashclub/awesome-heurist.git
 cd awesome-heurist
 ```
 
