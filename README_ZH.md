@@ -7,8 +7,8 @@
 
 ## 功能特性 ✨
 
-- 图像生成 (使用 Stable Diffusion 模型) 🖼️
-- LLM 对话 (使用 dolphin-2.9-llama3-8b 模型) 💬
+- 图像生成 (使用 FLUX.1-dev 模型) 🖼️
+- LLM 对话 (使用 llama-3.3-70b-instruct 模型) 💬
 - 支持 Python 和 JavaScript/Node.js 两种实现 🐍/🟦
 
 ## 开始使用 🚀
@@ -92,14 +92,18 @@ node llm.js
 
 ### LLM 对话 💬
 
-支持与 LLM 模型进行简单对话,默认使用 `dolphin-2.9-llama3-8b` 模型。
+支持与 LLM 模型进行简单对话,默认使用 `meta-llama/llama-3.3-70b-instruct` 模型。
+
+## 常见问题
+
+- got error "Invalid auth_key format": 在 .env 文件中添加双引号，例如 API_KEY="abc#123"，某些系统可能会将 # 识别为代码注释并忽略它
 
 ## 注意事项 ⚠️
 
 - 请确保妥善保管你的 API 密钥 🔒
 - API 调用可能会产生费用,请参考 Heurist 的定价政策 💰
 - 建议在正式环境中增加错误处理和重试机制 🔄
-- 申请 API key(2,000–10,000 免费积分)：[request form](https://dev-api-form.heurist.ai/)
+- 申请 API key(2,000–10,000 免费积分)：[request form](https://dev-api-form.heurist.ai/) , invite code: ai16z
 
 ## 许可证 📜
 

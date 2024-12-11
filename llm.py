@@ -4,11 +4,14 @@ import os
 
 
 def main():
+    # model = 'dolphin-2.9-llama3-8b'
+    # model = 'meta-llama/llama-3.1-405b-instruct'
+    model = 'meta-llama/llama-3.3-70b-instruct'
     url = "https://llm-gateway.heurist.xyz/v1/chat/completions"
     load_dotenv()
     api_key = os.getenv("HEURIST_API_KEY")
     payload = {
-        "model": "dolphin-2.9-llama3-8b",
+        "model": model,
         "messages": [
             {
                 "role": "user",

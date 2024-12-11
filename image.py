@@ -10,6 +10,8 @@ def main():
     url = "http://sequencer.heurist.xyz/submit_job"
     load_dotenv()
     api_key = os.getenv("HEURIST_API_KEY")
+    # model_id = 'HeuristLogo'
+    model_id = 'FLUX.1-dev'
     payload = {
         "job_id": generate_job_id(),
         "model_input": {
@@ -22,7 +24,7 @@ def main():
                 "guidance_scale": 7.5,
                 "seed": -1
             }},
-        "model_id": "HeuristLogo",
+        "model_id": model_id,
         "deadline": 60,
         "priority": 1
     }

@@ -7,9 +7,9 @@ Official TG: [Heurist Ecosystem Builder](https://t.me/heuristsupport)
 
 ## Features ✨
 
-- Image Generation (using Stable Diffusion model)
-- LLM Conversation (using dolphin-2.9-llama3-8b model)
-- Supports both Python and JavaScript/Node.js implementations
+- Image Generation (using FLUX.1-dev model) 🖼️
+- LLM Conversation (using meta-llama/llama-3.3-70b-instruct model) 💬
+- Supports both Python and JavaScript/Node.js implementations 🐍/🟦
 
 ## Getting Started 🚀
 
@@ -92,14 +92,19 @@ The project provides two ways to generate images:
 
 ### LLM Conversation
 
-Supports simple conversations with LLM models, using dolphin-2.9-llama3-8b model by default.
+Supports simple conversations with LLM models, using `meta-llama/llama-3.3-70b-instruct` model by default.
+
+## Common issue:
+
+- got error "Invalid auth_key format": add double quotes in .env file
+  like this API_KEY="abc#123", some systems might recognize # as a code comment and ignore it
 
 ## Important Notes ⚠️
 
 - Keep your API key secure 🔒
 - API calls may incur charges, please refer to Heurist's pricing policy 💰
 - Consider adding error handling and retry mechanisms in production environments 🔄
-- Request API key (2,000–10,000 free credits): [request form](https://dev-api-form.heurist.ai/)
+- Request API key (2,000–10,000 free credits): [request form](https://dev-api-form.heurist.ai/), invite code: ai16z
 
 ## License 📜
 
